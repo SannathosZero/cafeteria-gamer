@@ -1,0 +1,136 @@
+/* Estilos generales mejorados */
+body {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: white;
+}
+
+.header {
+    background: url('images/encabezado-background.jpg') no-repeat center center;
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.header h1 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f1c40f;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e67e22;
+}
+
+.bienvenida {
+    background: url('images/retro-game-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.bienvenida h2 {
+    font-size: 3em;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+.bienvenida .btn {
+    background-color: #f1c40f;
+    color: #111;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.bienvenida .btn:hover {
+    background-color: #e67e22;
+}
+
+footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+}
+
+.menu-categorias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .categoria {
+    width: 60%;
+    background-color: #222;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .submenu {
+    display: none;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+  }
+  .categoria.active .submenu {
+    display: block;
+  }
+
+     .menu-desplegable {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      position: relative;
+    }
+    .menu-desplegable > li {
+      display: inline-block;
+      position: relative;
+      padding: 10px 20px;
+    }
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #222;
+      padding: 10px;
+      border-radius: 5px;
+      min-width: 150px;
+    }
+    .menu-desplegable li:hover .submenu {
+      display: block;
+    }
+    .submenu li {
+      display: block;
+      padding: 5px 10px;
+    }
+    .informacion, .ubicacion, footer {
+      text-align: center;
+    }

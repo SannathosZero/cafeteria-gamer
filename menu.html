@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cafetería Gamer</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+      </head>
+      <body>
+        <header class="header">
+          <div class="logo">
+            <h1>Cafetería Gamer</h1>
+            <p>El café para los verdaderos gamers</p>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="menu.html">Menú</a></li>
+              <li><a href="eventos.html">Eventos</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </header>
+      
+
+  <section id="menu" class="menu">
+    <h2 style="text-align: center;">Menú de la Cafetería</h2>
+    <div class="menu-categorias">
+      <div class="categoria" onclick="toggleMenu(this)">
+        <a href="#" class="categoria-title">Bebidas</a>
+        <div class="submenu">
+          <div class="item">
+            <img src="images/espresso.png" alt="Espresso Pac-Man">
+            <h3>Espresso Pac-Man</h3>
+            <p>Café espresso con un toque energético.</p>
+          </div>
+          <div class="item">
+            <img src="images/latte.png" alt="Latte Zelda">
+            <h3>Latte Zelda</h3>
+            <p>Creamy latte con sabores exóticos.</p>
+          </div>
+          <div class="item">
+            <img src="images/mocha.png" alt="Mocha Final Fantasy">
+            <h3>Mocha Final Fantasy</h3>
+            <p>Delicioso mocha con un toque de caramelo.</p>
+          </div>
+        </div>
+      </div>
+      <div class="categoria" onclick="toggleMenu(this)">
+        <a href="#" class="categoria-title">Snacks</a>
+        <div class="submenu">
+          <div class="item">
+            <img src="images/pizza.png" alt="Pizza Mario">
+            <h3>Pizza Mario</h3>
+            <p>Pizza especial con ingredientes temáticos.</p>
+          </div>
+          <div class="item">
+            <img src="images/papas.png" alt="Papas Sonic">
+            <h3>Papas Sonic</h3>
+            <p>Papas fritas con salsa secreta.</p>
+          </div>
+          <div class="item">
+            <img src="images/hamburguesa.png" alt="Hamburguesa Smash Bros">
+            <h3>Hamburguesa Smash Bros</h3>
+            <p>Jugosa hamburguesa con doble carne y queso.</p>
+          </div>
+        </div>
+      </div>
+      <div class="categoria" onclick="toggleMenu(this)">
+        <a href="#" class="categoria-title">Postres</a>
+        <div class="submenu">
+          <div class="item">
+            <img src="images/pastel.png" alt="Pastel Kirby">
+            <h3>Pastel Kirby</h3>
+            <p>Suave pastel de fresa con crema batida.</p>
+          </div>
+          <div class="item">
+            <img src="images/brownie.png" alt="Brownie Zelda">
+            <h3>Brownie Zelda</h3>
+            <p>Brownie de chocolate con nueces y helado.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Cafetería Gamer</p>
+  </footer>
+
+  <script>
+    function toggleMenu(element) {
+      let isActive = element.classList.contains("active");
+  
+      document.querySelectorAll('.categoria').forEach(cat => {
+        cat.classList.remove("active");
+      });
+  
+      if (!isActive) {
+        element.classList.add("active");
+      }
+    }
+  </script>
+</body>
+</html>

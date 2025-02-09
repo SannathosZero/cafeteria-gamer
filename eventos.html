@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cafetería Gamer</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+      </head>
+      <body>
+        <header class="header">
+          <div class="logo">
+            <h1>Cafetería Gamer</h1>
+            <p>El café para los verdaderos gamers</p>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="menu.html">Menú</a></li>
+              <li><a href="eventos.html">Eventos</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </header>
+      
+  <section id="eventos" class="eventos">
+    <h2>Próximos Eventos</h2>
+    <p>Descubre nuestras próximas competiciones y torneos.</p>
+    <div class="menu-categorias">
+      <div class="categoria" onclick="toggleMenu(this)">
+        <a href="#" class="categoria-title">Torneos</a>
+        <div class="submenu">
+          <div class="item">
+            <h3>Torneo Mario Kart</h3>
+            <p>Fecha: 15 de febrero</p>
+          </div>
+          <div class="item">
+            <h3>Torneo Smash Bros</h3>
+            <p>Fecha: 22 de febrero</p>
+          </div>
+        </div>
+      </div>
+      <div class="categoria" onclick="toggleMenu(this)">
+        <a href="#" class="categoria-title">Conferencias</a>
+        <div class="submenu">
+          <div class="item">
+            <h3>Charla sobre Desarrollo de Videojuegos</h3>
+            <p>Fecha: 10 de marzo</p>
+          </div>
+        </div>
+      </div>
+      <div class="categoria" onclick="toggleMenu(this)">
+        <a href="#" class="categoria-title">Eventos Especiales</a>
+        <div class="submenu">
+          <div class="item">
+            <h3>Noche Retro-Gaming</h3>
+            <p>Fecha: 5 de abril</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Cafetería Gamer</p>
+  </footer>
+
+  <script>
+    function toggleMenu(element) {
+      document.querySelectorAll('.categoria').forEach(cat => {
+        if (cat !== element) {
+          cat.classList.remove("active");
+        }
+      });
+      element.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
